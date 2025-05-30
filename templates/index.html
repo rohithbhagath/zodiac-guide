@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Guide - Discover Your Celestial Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="parallax-container">
+        <section class="parallax intro-section">
+            <div class="content">
+                <h1>Discover Your Celestial Path</h1>
+                <p>Explore the ancient wisdom of zodiac signs and their influence on your life journey</p>
+                <div class="zodiac-symbols">
+                    <span class="symbol" data-sign="♈">♈</span>
+                    <span class="symbol" data-sign="♉">♉</span>
+                    <span class="symbol" data-sign="♊">♊</span>
+                    <span class="symbol" data-sign="♋">♋</span>
+                    <span class="symbol" data-sign="♌">♌</span>
+                    <span class="symbol" data-sign="♍">♍</span>
+                    <span class="symbol" data-sign="♎">♎</span>
+                    <span class="symbol" data-sign="♏">♏</span>
+                    <span class="symbol" data-sign="♐">♐</span>
+                    <span class="symbol" data-sign="♑">♑</span>
+                    <span class="symbol" data-sign="♒">♒</span>
+                    <span class="symbol" data-sign="♓">♓</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="content">
+                <h2>The Cosmic Connection</h2>
+                <p>Your zodiac sign is more than just a constellation - it's a reflection of cosmic energies that influence your personality, relationships, and life path.</p>
+            </div>
+        </section>
+
+        <section class="parallax zodiac-section">
+            <div class="content">
+                <h2>Find Your Sign</h2>
+                <form id="birthForm" class="birth-form">
+                    <div class="form-group">
+                        <label for="birthDate">Birth Date:</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                    <button type="submit">Discover Your Sign</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="chat-section">
+            <div class="content">
+                <h2>Ask the Stars</h2>
+                <div class="chat-container">
+                    <div id="chatMessages" class="chat-messages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="userMessage" placeholder="Ask about your zodiac sign...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
